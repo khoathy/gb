@@ -349,14 +349,6 @@ body {
   position: relative;
   height: 100vh;
   overflow: hidden; }
-  @media only screen and (max-width: 56.25em) {
-    .header {
-      display: flex;
-      flex-direction: column;
-      justify-content: space-around; } }
-  @media only screen and (max-width: 37.5em) {
-    .header {
-      height: 100vh; } }
   .header__textbox {
     max-width: 65rem;
     text-align: center;
@@ -365,19 +357,6 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%); }
-    @media only screen and (max-width: 75em) {
-      .header__textbox {
-        width: 35vw;
-        left: 8%; } }
-    @media only screen and (max-width: 56.25em) {
-      .header__textbox {
-        min-width: 80vw;
-        position: static;
-        top: auto;
-        left: auto;
-        bottom: 1rem;
-        margin: 0 auto;
-        transform: translate(0, 0); } }
     .header__textbox-content {
       color: #34343b; }
       @media only screen and (max-width: 56.25em) {
@@ -624,6 +603,9 @@ body {
     right: 50%;
     transform: translateX(50%);
     margin-top: 1.6rem; }
+
+.content {
+  overflow: hidden; }
 
 .section-team {
   background-color: #edeef3; }
